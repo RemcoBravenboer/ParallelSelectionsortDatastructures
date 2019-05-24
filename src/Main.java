@@ -9,7 +9,6 @@ public class Main {
     private static final int[] NUMBERS_COUNT = {100000, 200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000};
     private static final int THREADS = 4;
     private static int[][] splitArray;
-    private static List<Thread> threads = new ArrayList<>();
 
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Test results (numbers | time)\n");
@@ -75,7 +74,6 @@ public class Main {
                 }
 
                 sortedNumbers = sort.SelectionSort(sortedNumbers);
-                System.out.println(Arrays.toString(sortedNumbers));
             }
             System.out.println(NUMBERS_COUNT[z] + " | " + (System.currentTimeMillis() - startingTime) + "ms");
         }
