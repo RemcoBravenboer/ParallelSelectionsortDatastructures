@@ -1,7 +1,9 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
     private static final int[] NUMBERS_COUNT = {100000, 200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000};
@@ -55,28 +57,26 @@ public class Main {
                 }
             }
 
-            threads.clear();
+            ExecutorService executorService = Executors.newCachedThreadPool();
 
             for (int i = 0; i < THREADS; i++)
-                threads.add(new SelectionSortThread(i));
-
-            for (Thread thread : threads)
-                thread.start();
-
-            for (Thread thread : threads)
-                thread.join();
+                executorService.submit(new SelectionSortThread(i));
 
 
-            int x = 0;
-            for (int i = 0; i < splitArray.length; i++) {
-                for (int j = 0; j < splitArray[i].length; j++) {
-                    sortedNumbers[x] = splitArray[i][j];
-                    x++;
+            executorService.shutdown();
+            executorService.awaitTermination(1, TimeUnit.MINUTES);
+            if (executorService.isTerminated()) {
+                int x = 0;
+                for (int i = 0; i < splitArray.length; i++) {
+                    for (int j = 0; j < splitArray[i].length; j++) {
+                        sortedNumbers[x] = splitArray[i][j];
+                        x++;
+                    }
                 }
+
+                sortedNumbers = sort.SelectionSort(sortedNumbers);
+                System.out.println(Arrays.toString(sortedNumbers));
             }
-
-            sortedNumbers = sort.SelectionSort(sortedNumbers);
-
             System.out.println(NUMBERS_COUNT[z] + " | " + (System.currentTimeMillis() - startingTime) + "ms");
         }
     }
@@ -103,5 +103,7 @@ public class Main {
             splits[j][k++] = listToUse.get(i);
         }
         return splits;
-    };
+    }
+
+    ;
 }
