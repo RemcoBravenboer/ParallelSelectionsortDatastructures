@@ -1,18 +1,20 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
-    private static final int[] NUMBERS_COUNT = {100000, 200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000};
+    private static final int[] NUMBERS_COUNT = {10000, 200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000};
     private static final int THREADS = 2;
     private static int[][] splitArray;
     private static List<Thread> threads = new ArrayList<>();
-    ArrayBlockingQueue<Integer> numberz = new ArrayBlockingQueue<Integer>(1);
 
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Test results (numbers | time)\n");
         for (int z = 0; z < NUMBERS_COUNT.length; z++) {
+
             int[] sortedNumbers = new int[NUMBERS_COUNT[z]];
 
             List<Integer> numbers = Numbers.GenerateNumber(NUMBERS_COUNT[z]);
