@@ -22,29 +22,6 @@ public class Main {
 
             long startingTime = System.currentTimeMillis();
 
-            class Sort {
-                synchronized int[] SelectionSort(int[] arr) {
-                    int n = arr.length;
-
-                    // One by one move boundary of unsorted subarray
-                    for (int i = 0; i < n - 1; i++) {
-                        // Find the minimum element in unsorted array
-                        int min_idx = i;
-                        for (int j = i + 1; j < n; j++)
-                            if (arr[j] < arr[min_idx])
-                                min_idx = j;
-
-                        // Swap the found minimum element with the first
-                        // element
-                        int temp = arr[min_idx];
-                        arr[min_idx] = arr[i];
-                        arr[i] = temp;
-                    }
-
-                    return arr;
-                }
-            }
-
             Sort sort = new Sort();
 
             class SelectionSortThread extends Thread {
@@ -68,13 +45,7 @@ public class Main {
             executorService.shutdown();
             executorService.awaitTermination(1, TimeUnit.MINUTES);
             if (executorService.isTerminated()) {
-                int x = 0;
-                for (int i = 0; i < splitArray.length; i++) {
-                    for (int j = 0; j < splitArray[i].length; j++) {
-                        sortedNumbers[x] = splitArray[i][j];
-                        x++;
-                    }
-                }
+                Consumer.connectSplitArrays(sortedNumbers, splitArray);
 
                 sortedNumbers = sort.SelectionSort(sortedNumbers);
                 System.out.println(Arrays.toString(sortedNumbers));

@@ -12,4 +12,13 @@ class Numbers {
         return temp;
     }
 
+    static int[] GenerateNumberArr(int numberCount) {
+        int[] temp = new int[numberCount];
+        for (int i = numberCount; i > 0; i--) {
+            temp[numberCount - i] = i;
+        }
+
+        return temp;
+    }
+
 }
