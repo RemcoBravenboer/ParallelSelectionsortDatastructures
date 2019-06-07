@@ -23,7 +23,7 @@ public class Producer implements Runnable {
 
     public static void main(String[] args) throws InterruptedException {
         ExecutorService executorService = Executors.newCachedThreadPool();
-        int numberCount = 500000;
+        int numberCount = 50000;
         queue = new ArrayBlockingQueue<>(numberCount);
         int [] array = Numbers.GenerateNumberArr(numberCount);
         long timeBefore = System.currentTimeMillis();

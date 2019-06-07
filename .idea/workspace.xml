@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6fb9cd3-443b-4df0-bd00-80e816bb2b85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Sort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ParallelSelectionSort3-1/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ParallelSelectionSort3-1/Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ParallelSelectionSort3-1/Main$1SelectionSortThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ParallelSelectionSort3-1/Main$1SelectionSortThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ParallelSelectionSort3-1/Main$1Sort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ParallelSelectionSort3-1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ParallelSelectionSort3-1/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ParallelSelectionSort3-1/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ParallelSelectionSort3-1/Producer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Numbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Numbers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Producer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,12 +36,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Producer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+            <state relative-caret-position="357">
+              <caret line="103" column="22" selection-start-line="82" selection-start-column="8" selection-end-line="103" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1137#1138#0" expanded="true" />
-                <element signature="e#1171#1172#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,7 +86,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -111,6 +102,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -179,18 +171,20 @@
       <workItem from="1558695471134" duration="32000" />
       <workItem from="1558696367783" duration="10262000" />
       <workItem from="1558958301512" duration="7288000" />
-      <workItem from="1559034422594" duration="12421000" />
+      <workItem from="1559034422594" duration="13243000" />
+      <workItem from="1559554826811" duration="1406000" />
+      <workItem from="1559645418021" duration="72000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30528000" />
+    <option name="totallyTimeSpent" value="32828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3125506" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32388663" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -201,7 +195,7 @@
       <window_info id="Learn" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3268206" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3268206" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -244,9 +238,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParallelSelectionSort3-1.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Numbers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -257,6 +248,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ParallelSelectionSort3-1.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -266,12 +260,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Producer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+        <state relative-caret-position="357">
+          <caret line="103" column="22" selection-start-line="82" selection-start-column="8" selection-end-line="103" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-            <element signature="e#1171#1172#0" expanded="true" />
           </folding>
         </state>
       </provider>
