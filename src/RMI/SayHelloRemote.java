@@ -3,7 +3,7 @@ package RMI;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
-public class SayHelloRemote extends UnicastRemoteObject implements RemoteInterface {
+public class SayHelloRemote extends UnicastRemoteObject implements Service {
     SayHelloRemote() throws RemoteException {
         super();
     }

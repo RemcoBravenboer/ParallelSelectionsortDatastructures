@@ -6,7 +6,7 @@ import java.rmi.registry.Registry;
 public class Server {
     public static void main(String[] args) {
         try{
-            RemoteInterface stub = new SayHelloRemote();
+            Service stub = new SayHelloRemote();
             Registry registry = LocateRegistry.createRegistry(8080);
             registry.rebind("reg",stub);
             System.out.println("Succes!");

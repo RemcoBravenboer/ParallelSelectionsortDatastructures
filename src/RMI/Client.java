@@ -9,7 +9,7 @@ public class Client {
         try {
 //            LocateRegistry.createRegistry(8080);
             Registry registry = LocateRegistry.getRegistry(host, 8080);
-            RemoteInterface stub = (RemoteInterface) registry.lookup("reg");
+            Service stub = (Service) registry.lookup("reg");
             System.out.println(stub.sayHello());
             System.out.println("Success? ");
         } catch (Exception e) {
